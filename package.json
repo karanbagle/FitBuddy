@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
     "axios-retry": "^4.0.0",
+    "dotenv-expand": "^11.0.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "openai": "^4.0.0",
