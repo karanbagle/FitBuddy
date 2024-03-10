@@ -5,6 +5,7 @@
 
 # virtual env
 myenv/
+*.dylib
 
 # misc
 .DS_Store
