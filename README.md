@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# FitBuddy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+FitBuddy is designed to deliver immediate, personalized medical advice through an interactive and user-friendly interface. Utilizing advanced machine learning algorithms, including Perplexity AI for conversational AI capabilities, the platform provides users with reliable health information and advice tailored to their specific needs.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+- **Interactive Human Model**: Users can pinpoint areas of discomfort on a 3D human model to receive tailored exercises and relief strategies.
+- **Instant Medical Advice**: A powerful search feature allows users to get immediate advice on various medical conditions.
+- **Secure Medical Data Upload**: Users can upload their medical records for enhanced advice, with all data processed locally to ensure privacy.
+- **Voice-Enabled Queries**: A talk feature supports input in over 10 languages, offering responses in both text and audio to accommodate all users.
+- **Multilingual Support**: Ensuring accessibility, the platform supports multiple languages, broadening its user base.
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+## Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: Developed with React.js, utilizing Axios for efficient API communication.
+- **Backend**: A Flask server processes API requests and integrates with machine learning models for data analysis.
+- **Machine Learning**: Perplexity AI is employed for the chatbot feature, enabling dynamic follow-up questions and personalized advice.
+- **Deployment**: The frontend is hosted on GitHub Pages, while the backend is deployed on Heroku, ensuring reliability and scalability.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have the following installed:
+- Node.js
+- Python
+- Git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Set up the Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+# Navigate to the frontend directory
+cd frontend  # Adjust this path as necessary
+npm install   # Install dependencies
+npm start     # Start the React app
+```
+#### Set up the Backend
+# Navigate to the backend directory
+cd ../backend  # Adjust this path as necessary
+python -m venv venv                                # Create a virtual environment
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt                   # Install dependencies
+flask run                                          # Start the Flask server
 
-### `npm run eject`
+Usage
+After starting both the frontend and backend, access the Health Assistant Platform through your web browser at http://localhost:3000 (adjust the port if necessary). Explore the features such as interacting with the human model, searching for medical advice, uploading medical documents, or using the voice feature.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributing
+We welcome contributions! Feel free to submit pull requests, open issues, or provide feedback to improve the platform.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contact
+Your Name - 
+Project Link: 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
